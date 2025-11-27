@@ -89,6 +89,14 @@ while True:
         startText = scaledFont.render("START", True, (0, 0, 0))
         startRect = startText.get_rect(center=(width // 2, 200))
         root.blit(startText, startRect)
+
+        iranyitasText = fontStart.render("Iranyitás", True, (255, 255, 255))
+        iranyitasBalraText = fontScore.render("Balra    ←", True, (255, 255, 255))
+        iranyitasJobbraText = fontScore.render("Jobbra  →", True, (255, 255, 255))
+        root.blit(iranyitasText, (130, 350))
+        root.blit(iranyitasBalraText, (150, 400))
+        root.blit(iranyitasJobbraText, (150, 430))
+
         pygame.display.update()
         clock.tick(60)
         continue
