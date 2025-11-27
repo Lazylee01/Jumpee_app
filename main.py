@@ -30,7 +30,7 @@ kiemelesIrany = 1
 kiemeles = False
 
 def reset():
-    deszkak = back_SZN.DeszkaGeneralas(width, height, 8)
+    deszkak = back_SZN.deszkaGeneralas(width, height, 8)
     elsoDeszka = deszkak[0]
     jatekos = back_SZN.Jatekos_SZN(elsoDeszka.pozX, elsoDeszka.pozY - 40)
     return jatekos, deszkak, 0, True
@@ -126,7 +126,7 @@ while True:
             if deszka.pozY - deszka.height / 2 > height:
                 deszkaSzelesseg = random.choice([40, 70, 90])
                 x = random.randint(deszkaSzelesseg // 2, width - deszkaSzelesseg // 2)
-                random.randint(-120, -40)
+                random.randrange(-120, -40)
                 lista.append(back_SZN.Deszka(x, y, deszkaSzelesseg))
                 scoreHozzaadas_SZN(2)
             else:

@@ -41,7 +41,7 @@ class Deszka():
     def rajzol(self, screen):
         pygame.draw.rect(screen, ("brown"), (self.pozX - self.width / 2, self.pozY - self.height / 2, self.width, self.height))
 
-def DeszkaGeneralas(width, height, db):
+def deszkaGeneralas(width, height, db):
     deszkak = []
     y = height - 40
 
